@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TRY NOT TO DIE</title>
+
+    <meta name="description" content="A roadblock in the game" />
+    <!-- styles -->
+    <style>
+      .box {
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-duration: 6s;
+        animation-name: imageswitcher;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-origin: 50px 100px;
+      }
+      @keyframes imageswitcher {
+        from {
+          background-image: url(https://cdn.glitch.com/7e262a17-f003-4b1d-864d-58635754302e%2FScreen%20Shot%202021-05-12%20at%204.38.13%20PM.png?v=1620801564706);
+          transform: rotate(-360deg);
+        }
+        50% {
+          background-image: url(https://cdn.glitch.com/7e262a17-f003-4b1d-864d-58635754302e%2FScreen%20Shot%202021-05-12%20at%204.38.30%20PM.png?v=1620801566538);
+          margin-left: 50px;
+        }
+        75% {
+          background-image: url(https://cdn.glitch.com/7e262a17-f003-4b1d-864d-58635754302e%2FScreen%20Shot%202021-05-12%20at%204.38.43%20PM.png?v=1620801569392);
+          transform: rotate(360deg);
+        }
+        to {
+          background-image: url(https://cdn.glitch.com/7e262a17-f003-4b1d-864d-58635754302e%2FScreen%20Shot%202021-05-12%20at%204.37.58%20PM.png?v=1620801571914);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <div class="box"></div>
+    <!-- script -->
+    <script></script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
